@@ -1,0 +1,139 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  max-width:  1600px;
+}
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin:20px  50px ; 
+    background-color: rgb(255, 255, 255); 
+}
+.header-content {
+    text-align: left;
+    position: relative;
+    padding: 10px; 
+    margin-top: 50px;
+}
+.header-content h1 {
+    font-size: 75px;
+    font-family: "Comic Sans MS", cursive;
+    margin: 0;
+    position: absolute;
+    top: 30px; 
+    left: 20px;
+    color: rgb(0, 0, 0);
+    z-index: 2; 
+}
+.header-content .header-image {
+    width: 100%; 
+    height: 350px;
+    position: relative; 
+    top: 20px; 
+    left: 0; 
+}
+.barra {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 15px;
+}
+.barra span {
+    font-size: 30px;
+}
+.barra img {
+    width: 8%;
+    position: absolute;
+    top: -45px;
+    right: 18%;
+}
+.navegacion-vertical {
+    position: absolute;
+    left: 100px;
+    top: 70%; 
+}
+.navegacion-vertical a {
+    color: blue; 
+    text-decoration: underline; 
+}
+.navegacion-vertical a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.navegacion-vertical ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navegacion-vertical li {
+    margin: 10px 0;
+    margin-bottom: 80%;
+}
+.contenido {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+.contenido p {
+    display: block;
+    text-indent: 20px; 
+}
+.contenido p::first-line {
+    text-indent: 0; 
+}
+/* Media Queries para tablets y dispositivos móviles */
+@media (max-width: 768px) {
+    .header-content {
+        margin-top: 20px;
+    }
+
+    .header-content h1 {
+        font-size: 40px;
+        top: 20px;
+    }
+
+    .header-content .header-image {
+        height: 250px;
+    }
+
+    .barra {
+        margin-top: 10px;
+    }
+
+    .barra span {
+        font-size: 20px;
+    }
+
+    .barra img {
+        width: 10%;
+        top: -35px;
+    }
+
+    .navegacion-vertical {
+        left: 10px;
+        top: 55%; /* Ajusta el valor para mover los enlaces más arriba */
+    }
+    
+    .navegacion-vertical ul {
+        flex-direction: column; /* Alinea los enlaces verticalmente */
+        align-items: flex-start; /* Alinea los enlaces a la izquierda */
+    }
+
+    .navegacion-vertical li {
+        margin: 25px 0; /* Espaciado vertical entre enlaces */
+    }
+    .contenido {
+        margin-left: 15%;
+        margin-right: 10%;
+    }
+
+}
+   

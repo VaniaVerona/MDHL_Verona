@@ -1,0 +1,116 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  max-width:  1600px;
+}
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 20px 50px; 
+    padding: 0;
+    background-color: rgb(255, 255, 255); 
+ }
+.header-content {
+    position: relative;
+    padding: 0px; 
+    text-align: left;
+    height: 481px;
+    margin: 0 auto; 
+}
+.header-content h1 {
+    font-size: 75px;
+    font-family: "Comic Sans MS", cursive;
+    margin: 0;
+    position: relative;
+    top: 10px; 
+    left: 20px;
+    color: rgb(0, 0, 0);
+    z-index: 2;
+}
+.header-content .header-image {
+    height: 350px;
+    position: relative;
+    top: 5px; 
+    border: 2px solid black; 
+}
+.header-image {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px; 
+    width: 100%; 
+    height: auto;
+}
+.navegacion-vertical {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: flex-end; 
+    position: absolute;
+    top: 125px; 
+    right: 50px; 
+}
+.navegacion-vertical ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.navegacion-vertical li {
+    margin: 5px 10px;
+}
+.navegacion-vertical a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid hsl(231, 92%, 47%);
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; 
+    background-color: blue;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.barra {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+    position: relative;
+} 
+.barra span {
+    font-size: 30px;
+}
+.barra img {
+    width: 10%;
+    position: absolute;
+    top: 65px;
+    left: 0.5%;
+}
+.about-button.current {
+    background-color: #27ae60 !important;
+    color: white !important;
+}
+.contact-button.current {
+    background-color: #27ae60 !important;
+    color: white !important;
+}
+.current {
+    background-color: #27ae60 !important;
+    color: white !important;
+}
+.contenido {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 15%;
+}
+.contenido p {
+    display: block;
+    text-indent: 20px; 
+}
+.contenido p::first-line {
+    text-indent: 0; 
+}
