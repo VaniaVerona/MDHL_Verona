@@ -1,0 +1,338 @@
+*,
+::before,
+::after {
+    font-family: Verdana, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #000000;
+    text-align: center;
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 150px;
+    /* Ajusta la altura según el tamaño de tu logo */
+    margin-right: 10px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: 55px;
+}
+
+.navigation {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation li {
+    margin: 0 15px; /* Agrega espaciado horizontal entre los enlaces */
+    display: flex;
+    align-items: center;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navigation a:hover {
+    color: #ccc;
+}
+
+.image-section {
+    margin-top: 20px;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+}
+
+.barra {
+    background-color: #a11111;
+    color: white;
+    padding:  0;
+    text-align: center;
+    font-weight: bold;
+    }
+.content {
+    text-align: justify;
+   }
+
+.centered-block {
+    text-align: center;
+    padding: 10px;
+   
+}
+.centered-block,
+.content h2,
+.content h3,
+.content h4,
+.content p,
+.content ol,
+.content ul {
+    color: white;
+    /* Cambia el color de fuente a blanco */
+}
+.schedule {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.schedule .schedule-heading {
+    margin: 40px; /* Elimina el margen superior e inferior del encabezado */
+}
+
+.schedule .schedule-description {
+    margin: 40px; /* Elimina el margen superior e inferior de la descripción */
+    text-decoration: underline; /* Subraya el texto */
+}
+/* Estilos específicos para la página Games */
+.games-content {
+    text-align: justify;
+    padding: 10px;
+    background-color: #000000;
+}
+
+.games-content p {
+    margin-bottom: 10px;
+    margin-left: 10%;
+    text-align: justify;
+}
+
+.home .content {
+    text-align: center;
+    text-justify: none;
+}
+
+.contact-info {
+    padding: 0;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+}
+
+.left-info {
+    flex: 1; 
+    text-align: left;
+    padding-left: 12%;
+}
+
+.right-info {
+    flex: 1; 
+    text-align: right;
+    padding-right:20%;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.about-page .content,
+.rules-page .content {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.about-page .content p,
+.rules-page .content p {
+    display: block;
+    text-indent: 20px;
+}
+
+.about-page .content p::first-line,
+.rules-page .content p::first-line {
+    text-indent: 0;
+}
+
+.about-page .content ul,
+.rules-page .content ul {
+    padding-left: 20px;
+}
+
+.about-page .content li,
+.rules-page .content li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #a11111;
+    color: white;
+}
+
+.btn-home.current {
+    background-color: #f9991c;
+    color: black;
+}
+
+.btn-about.current {
+    background-color: #f9991c;
+    color: black;
+}
+
+.btn-rules.current {
+    background-color: #f9991c;
+    color: black;
+}
+
+.btn-games.current {
+    background-color: #f9991c;
+    color: black;
+}
+
+.btn-contact.current {
+    background-color: #f9991c;
+    color: black;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+caption {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+th {
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+
+td {
+    padding: 5px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .logo {
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+   /* Estilos para la barra de navegación */
+.navigation {
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Agrega el ajuste para envolver en varios renglones */
+}
+
+.navigation li {
+    margin: 5px; /* Ajusta el margen para separar los enlaces */
+    display: flex;
+    align-items: center;
+    flex: 1; /* Distribución equitativa de ancho en el contenedor */
+}
+
+.navigation a {
+    color: black; /* Cambia el color del texto para que sea visible */
+    text-decoration: none;
+    font-size: 16px; /* Reduce el tamaño de fuente */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 5px; /* Añade un poco de espacio alrededor del enlace */
+    border: 1px solid #ccc; /* Agrega un borde para separar los enlaces */
+    border-radius: 5px; /* Agrega bordes redondeados */
+}
+
+.navigation a:hover {
+    background-color: #f1f1f1; /* Cambia el color de fondo al pasar el cursor */
+}
+
+    .barra {
+        font-size: 24px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    /* Estilos específicos para la tabla en la página Game_info */
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    caption {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    /* Estilos específicos para el contenido en las páginas About y Rules */
+    article h3,
+    article h4 {
+        font-size: 24px;
+    }
+
+    article p,
+    article ul,
+    article ol,
+    article li {
+        font-size: 14px;
+    }
+}
+
