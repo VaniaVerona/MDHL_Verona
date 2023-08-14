@@ -1,30 +1,35 @@
-*,
-::before,
-::after {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Verdana, Arial, sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    
+    margin: 0 auto;
+    
+   
 }
-
 .container {
-    background-color: #000000;
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
     padding: 0;
+    background-color: #050505;
 }
 
 .header-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+   
 }
 
 .logo {
     height: 150px;
-    /* Ajusta la altura según el tamaño de tu logo */
+ 
     margin-right: 10px;
 }
 
@@ -34,23 +39,30 @@ h1 {
     font-size: 55px;
 }
 
-.navigation {
-    background-color: #ffffff;
-    padding: 10px 0;
-}
 
+.navigation {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+   
+}
 .navigation ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    background-color: #fcfcfc;
 }
 
 .navigation li {
-    margin: 0 15px; /* Agrega espaciado horizontal entre los enlaces */
+    margin: 0 ; 
     display: flex;
     align-items: center;
+    padding: 0 10px; 
+   
 }
 
 .navigation a {
@@ -64,29 +76,38 @@ h1 {
 }
 
 .image-section {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .header-image {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 300px;
 }
 
+
 .barra {
-    background-color: #a11111;
-    color: white;
+    background-color:#a11111;
+    color: #ffffff;
     padding:  0;
     text-align: center;
     font-weight: bold;
+    width: 100%; 
+    margin: 0; 
+    
+}
+    
+.content {     
+        text-align: justify;
+      margin-left: 5px; 
+        margin-right: 5px; 
     }
-.content {
-    text-align: justify;
-   }
+    
+    
 
 .centered-block {
+   margin: 10px;
     text-align: center;
-    padding: 10px;
-   
+    padding:10px;
 }
 .centered-block,
 .content h2,
@@ -96,7 +117,7 @@ h1 {
 .content ol,
 .content ul {
     color: white;
-    /* Cambia el color de fuente a blanco */
+   
 }
 .schedule {
     text-align: left;
@@ -104,19 +125,18 @@ h1 {
 }
 
 .schedule .schedule-heading {
-    margin: 40px; /* Elimina el margen superior e inferior del encabezado */
+    margin: 20px; 
 }
 
 .schedule .schedule-description {
-    margin: 40px; /* Elimina el margen superior e inferior de la descripción */
-    text-decoration: underline; /* Subraya el texto */
+    margin: 20px; 
+    text-decoration: underline; 
 }
-/* Estilos específicos para la página Games */
+
 .games-content {
     text-align: justify;
-    padding: 10px;
-    background-color: #000000;
-}
+    padding: 0px;
+   }
 
 .games-content p {
     margin-bottom: 10px;
@@ -124,31 +144,34 @@ h1 {
     text-align: justify;
 }
 
-.home .content {
+.home .content
+{
     text-align: center;
-    text-justify: none;
+}
+
+.contact-page .content {
+    text-align: center;
 }
 
 .contact-info {
+    max-height: 30px;
     padding: 0;
-    background-color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px; 
-    margin-bottom: 10px; 
+    
 }
 
 .left-info {
     flex: 1; 
     text-align: left;
-    padding-left: 12%;
+    padding-left: 10%;
 }
 
 .right-info {
     flex: 1; 
     text-align: right;
-    padding-right:20%;
+    padding-right:17%;
 }
 
 .contact-info a {
@@ -216,7 +239,10 @@ h1 {
     background-color: #f9991c;
     color: black;
 }
-
+.btn-registro.current {
+    background-color: #f9991c;
+    color: black;
+}
 .btn-contact.current {
     background-color: #f9991c;
     color: black;
@@ -250,7 +276,108 @@ td {
     color: #ffffff;
 }
 
-@media screen and (max-width: 768px) {
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+.map-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+
+.map-container {
+    flex-basis: calc(30% - 10px); 
+    margin-bottom: 20px;
+    margin-left: 10px; 
+    margin-right: 10px; 
+    padding: 0px;
+}
+
+
+.map-container h4 {
+    margin-top: 10px;
+    
+    }
+
+form {
+    margin: 0 auto;
+    color: white;
+    }
+ fieldset {
+        border: none;
+    }
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom:20px;
+    margin-left: 25px; 
+}
+
+.input-group-header {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; /* Alineación a la izquierda */
+    width: 100%;
+    margin-bottom: 5px;
+}
+.margin-top-20 {
+    margin-top: 20px;
+  
+}
+.input-group.group-margin-bottom {
+    margin-bottom: 30px;
+}
+ 
+ 
+  .input-group-header-row label {
+    margin: 0; 
+    margin-bottom: 15px;
+  }
+  
+
+.input-group label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+    width: auto;
+}
+
+
+.input-group input[type="text"] {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: rgb(218, 154, 18);
+    background-color: transparent;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.input-group input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px; 
+}
+
+.formulario {
+    text-align: left;
+    margin-left: 25px;
+    margin-right:10px ;
+    margin-bottom: 10px;
+}
+
+
+
+@media screen and (max-width: 870px) {
     .container {
         padding: 10px;
     }
@@ -275,30 +402,28 @@ td {
     padding: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Agrega el ajuste para envolver en varios renglones */
+    flex-wrap: wrap;
 }
 
 .navigation li {
-    margin: 5px; /* Ajusta el margen para separar los enlaces */
+    margin: 5px; 
     display: flex;
     align-items: center;
-    flex: 1; /* Distribución equitativa de ancho en el contenedor */
+    flex: 1;
 }
-
 .navigation a {
-    color: black; /* Cambia el color del texto para que sea visible */
+    color: black;
     text-decoration: none;
-    font-size: 16px; /* Reduce el tamaño de fuente */
-    text-align: center; /* Centra el texto horizontalmente */
-    padding: 5px; /* Añade un poco de espacio alrededor del enlace */
-    border: 1px solid #ccc; /* Agrega un borde para separar los enlaces */
-    border-radius: 5px; /* Agrega bordes redondeados */
+    font-size: 16px; 
+    text-align: center; 
+    padding: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
 }
 
 .navigation a:hover {
-    background-color: #f1f1f1; /* Cambia el color de fondo al pasar el cursor */
+    background-color: #f1f1f1; 
 }
-
     .barra {
         font-size: 24px;
     }
@@ -307,7 +432,6 @@ td {
         padding: 20px;
     }
 
-    /* Estilos específicos para la tabla en la página Game_info */
     table {
         width: 100%;
         font-size: 12px;
@@ -322,7 +446,7 @@ td {
         padding: 5px;
     }
 
-    /* Estilos específicos para el contenido en las páginas About y Rules */
+
     article h3,
     article h4 {
         font-size: 24px;
@@ -335,4 +459,5 @@ td {
         font-size: 14px;
     }
 }
+
 
